@@ -9,4 +9,4 @@ It has also been modified for social links and different UI theme.
 
 More features to come as I get more time :)
 
-![ScreenShot](http://oi44.tinypic.com/2r2u9h4.jpg)
+![ScreenShot](http://oi40.tinypic.com/102qvy9.jpg)
