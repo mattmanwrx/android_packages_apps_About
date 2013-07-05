@@ -1,17 +1,38 @@
-Crossbones ROM includes many features and modifications which extend the capabilities of Android.  With each update to Android, Crossbones features may change or be altered to work with the latest version.
+Dirty Unicorns is made up of many ROMs to bring you the latest and greatest features to provide the best user experience. We thank each and every contributor, for a full list of credit/thanks please check our ROM threads or our source.
 
 Feature list:
-- Rooted ROM using SuperSU for su binary control
-- All devices packaged with LeanKernel
-- Extra options added to Settings for kernel tuning (CPU control, sound options, GPU options, etc.)
-- T-Mobile Theme Engine support
-- Basic File Manager app included
-- Flashlight included for devices that have a camera flash (Torch app)
-- Goo.im integration (GooManager app): get automatic notifications for ROM & GAPPS updates
-- Busybox included
-- init.d script support
-- Extended power menu (reboot options, screenshot, etc.)
-- OTG USB support: connect USB devices to microUSB port using OTG cable
-- Modified dictionaries
-- Option to have MMS app split text messages by encoding
-- Status bar clock options
+- Facebook Sync Hack
+- Expanded desktop
+- PIE along with PIE Control
+- Paranoidandroid Hybrid Engine
+- Per-App-Color mod
+- Ribbons (AOKP)
+- Dirt Settings (based off root-box)
+- Customizable Quick Settings
+- Custom "BAMF" Theme engine
+- Customizable power menu
+- Customizable lockscreen buttons and sliders
+- SMS and missed call breathing notifications
+- Permissions Management
+- CM Camera Mods
+- CM Powerwidget
+- CM Profiles
+- CM apps (Apollo, DSPManager, CMFileManager, etc)
+- CM phone advanced settings
+- CM Privacy Guard
+- SlimROMs notification shortcuts
+- SlimROMs TRDS (built in theme in settings)
+- SlimROMs Statusbar Clock options
+- Transparent Statusbar and NavBar Options
+- Halo from Paranoidandroid
+- Halo bubble color changer
+- Multi-user support
+- Hardware keys remap mod
+- 24 Battery options
+- More power options (Torch, Profiles, etc)
+- Gesture based lockscreen security
+- Network speed indicator in statusbar
+- Color customization of Tiles (Team Baked)
+- Koush Superuser
+- Nav Bar customizations 
+- Much More, just look in Settings and ENJOY!!!

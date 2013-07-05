@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2012 Crossbones Software
+# This code has been modified.  Portions copyright (C) 2013, Dirty Unicorns Project.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,7 +24,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := android-support-v4
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 
-LOCAL_PACKAGE_NAME := Welcome
+LOCAL_PACKAGE_NAME := About
 
 include $(BUILD_PACKAGE)
 ##################################################

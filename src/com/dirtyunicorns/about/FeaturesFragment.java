@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012 Crossbones Software
+ * This code has been modified.  Portions copyright (C) 2013, Dirty Unicorns Project.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,19 +15,27 @@
  * limitations under the License.
  */
 
-package com.crossbones.welcome;
+package com.dirtyunicorns.about;
 
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
-public class ContactFragment extends Fragment {
+
+public class FeaturesFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        View featuresView = inflater.inflate(R.layout.features_fragment, container, false);
+
+        TextView featuresText = (TextView) featuresView.findViewById(R.id.features);
+        featuresText.setText(Utils.readRawFile(AboutActivity.appContext, R.raw.features));
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.contact_fragment, container, false);
+        return featuresView;
     }
 }

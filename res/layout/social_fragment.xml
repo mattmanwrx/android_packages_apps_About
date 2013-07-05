@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2012 Crossbones Software
+     This code has been modified.  Portions copyright (C) 2013, Dirty Unicorns Project.
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -28,18 +29,51 @@
             android:orientation="vertical" 
             android:gravity="center_horizontal">
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                android:src="@drawable/googleplus"                
+                android:onClick="launchGoogleplus" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingBottom="5sp"
                 android:textSize="20sp"
-                android:text="@string/contact_title" />
+                android:text="@string/googleplus" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                android:src="@drawable/twitter"                
+                android:onClick="launchTwitter" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="@string/contact_text" />
+                android:paddingBottom="5sp"
+                android:textSize="20sp"
+                android:text="@string/twitter" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                android:src="@drawable/github"                
+                android:onClick="launchGithub" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp"
+                android:textSize="20sp"
+                android:text="@string/github" />
+
         </LinearLayout>
 
     </RelativeLayout>

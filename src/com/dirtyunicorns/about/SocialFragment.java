@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012 Crossbones Software
+ * This code has been modified.  Portions copyright (C) 2013, Dirty Unicorns Project.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,31 +15,19 @@
  * limitations under the License.
  */
 
-package com.crossbones.welcome;
+package com.dirtyunicorns.about;
 
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
-
-public class AboutFragment extends Fragment {
+public class SocialFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        View aboutView = inflater.inflate(R.layout.about_fragment, container, false);
-
-        TextView aboutTitle = (TextView) aboutView.findViewById(R.id.about_title);
-        String version =  Utils.getRomVersion();
-        aboutTitle.append(" " + version);
-
-        TextView aboutText = (TextView) aboutView.findViewById(R.id.about);
-        aboutText.setText(Utils.readRawFile(AboutActivity.appContext, R.raw.about_crossbones));
-
         // Inflate the layout for this fragment
-        return aboutView;
+        return inflater.inflate(R.layout.social_fragment, container, false);
     }
 }

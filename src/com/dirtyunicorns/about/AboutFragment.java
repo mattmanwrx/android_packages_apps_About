@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012 Crossbones Software
+ * This code has been modified.  Portions copyright (C) 2013, Dirty Unicorns Project.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.crossbones.welcome;
+package com.dirtyunicorns.about;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -24,21 +25,21 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-public class ChangelogFragment extends Fragment {
+public class AboutFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View changelogView = inflater.inflate(R.layout.changelog_fragment, container, false);
+        View aboutView = inflater.inflate(R.layout.about_fragment, container, false);
 
-        TextView changelogVersion = (TextView) changelogView.findViewById(R.id.changelog_version);
+        TextView aboutTitle = (TextView) aboutView.findViewById(R.id.about_title);
         String version =  Utils.getRomVersion();
-        changelogVersion.append(" " + version);
+        aboutTitle.append(" " + version);
 
-        TextView changelogText = (TextView) changelogView.findViewById(R.id.changelog);
-        changelogText.setText(Utils.readRawFile(AboutActivity.appContext, R.raw.changelog));
+        TextView aboutText = (TextView) aboutView.findViewById(R.id.about);
+        aboutText.setText(Utils.readRawFile(AboutActivity.appContext, R.raw.about_dirtyunicorns));
 
         // Inflate the layout for this fragment
-        return changelogView;
+        return aboutView;
     }
 }

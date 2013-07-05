@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012 Crossbones Software
+ * This code has been modified.  Portions copyright (C) 2013, Dirty Unicorns Project.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.crossbones.welcome;
+package com.dirtyunicorns.about;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -24,17 +25,18 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-public class FeaturesFragment extends Fragment {
+public class MaintainersFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View featuresView = inflater.inflate(R.layout.features_fragment, container, false);
+        View maintainersView = inflater.inflate(R.layout.maintainers_fragment, container, false);
 
-        TextView featuresText = (TextView) featuresView.findViewById(R.id.features);
-        featuresText.setText(Utils.readRawFile(AboutActivity.appContext, R.raw.features));
+        TextView maintainersVersion = (TextView) maintainersView.findViewById(R.id.maintainers_version);
+        String version =  Utils.getRomVersion();
+        maintainersVersion.append(" " + version);
 
         // Inflate the layout for this fragment
-        return featuresView;
+        return maintainersView;
     }
 }

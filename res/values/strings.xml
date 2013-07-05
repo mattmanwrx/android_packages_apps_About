@@ -16,33 +16,51 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="app_name">About the Crossbones ROM</string>
-
-    <string name="about_tab_title">About</string>
-    <string name="features_tab_title">Features</string>
-    <string name="changelog_tab_title">Changelog</string>
-    <string name="contact_tab_title">Contact</string>
-    <string name="donate_tab_title">Donate</string>
-
-    <string name="about_title">Welcome to Crossbones</string>
-
-    <string name="features_title">Crossbones Features</string>
-
-    <string name="changelog_title">CHANGELOG:</string>
-    <string name="changelog_version_text">Current Version:</string>
-
-    <string name="contact_title">Contacting Crossbones:</string>
-    <string name="contact_text">http://xbones.org\nsupport@xbones.org\nTwitter: @Xbones_dev\nIRC: #crossbones on FreeNode\n\nWe are also on RootzWiki and XDA forums</string>
-
-    <string name="donate_title">Donate to Crossbones</string>
-    <string name="donate_summary">Support Crossbones by donating through PayPal.\n\mDonations go towards the purchase of new devices, hardware, books, and anythine else related to the development of Crossbones Software.\n\nWe appreciate your support!</string>
-    <string name="donate_url">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=EX9W3A7743TZS</string>
-
-    <string name="donate_button_text">Donate via PayPal</string>
+    <string name="app_name">About Dirty Unicorns™</string>
+    <string name="about_title">Welcome to Dirty Unicorns</string>
+    <string name="features_title">DU Features</string>
+    <string name="maintainers_title">Official Maintainers</string>
+    <string name="maintainers_version_text">listed in no particular order</string>
     <string name="finish_button_text">Finish</string>
     <string name="back_button_text">Back</string>
     <string name="next_button_text">Next</string>
-
     <string name="menu_exit">Exit</string>
+
+    <!-- Tabs -->
+    <string name="about_tab_title">About</string>
+    <string name="features_tab_title">Features</string>
+    <string name="maintainers_tab_title">Maintainers</string>
+    <string name="contributors_tab_title">Contributors</string>
+    <string name="social_tab_title">Social</string>
+
+    <!-- Social -->
+    <string name="googleplus_url">https://plus.google.com/communities/109738128866939227235</string>
+    <string name="googleplus">Come join us at our great G+ community!!</string>
+    <string name="twitter_url">https://twitter.com/_DirtyUnicorns_</string>
+    <string name="twitter">Come tweet with us at Twitter!!</string>
+    <string name="github">View our source or Contribute if you wish!!</string>
+    <string name="github_url">https://github.com/DirtyUnicorns422</string>
+
+    <!-- Maintainers -->
+    <string name="paul">DEVICE: Nexus 4</string>
+    <string name="dennis">DEVICE: Samsung Galaxy S III (I9300)</string>
+    <string name="kenneth">DEVICE: Samsung Epic 4G Touch</string>
+    <string name="brian">DEVICE: Samsung Fascinate</string>
+    <string name="paul_url">https://plus.google.com/114519299157665129936</string>
+    <string name="dennis_url">https://plus.google.com/110150707325272137288</string>
+    <string name="kenneth_url">https://plus.google.com/110561769492553874762</string>
+    <string name="brian_url">https://plus.google.com/115522815889154627721</string>
+
+    <!-- Contributors -->
+    <string name="contributors">Contributors</string>
+    <string name="contributors2">listed in no particular order</string>
+    <string name="aokp_url">https://plus.google.com/105080186717848173196</string>
+    <string name="cm_url">https://plus.google.com/+CyanogenMod/</string>
+    <string name="pa_url">https://plus.google.com/107979589566958860409</string>
+    <string name="carbon_url">https://plus.google.com/103315278250477995368</string>
+    <string name="chaos_url">https://plus.google.com/communities/118345323576530120067</string>
+    <string name="preludedrew_url">https://plus.google.com/110733352602948379183</string>
+    <string name="lordclockan_url">https://plus.google.com/103606270348994952889</string>
+    <string name="daxxmax_url">https://plus.google.com/115569516936113574583</string>
 
 </resources>

@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012 Crossbones Software
+ * This code has been modified.  Portions copyright (C) 2013, Dirty Unicorns Project.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.crossbones.welcome;
+package com.dirtyunicorns.about;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -25,8 +26,8 @@ import android.util.Log;
 
 public class BootCompleteReceiver extends BroadcastReceiver {
 
-    private static final String WELCOME_INTENT = "com.crossbones.welcome.AboutActivity";
-    private static final String TAG = "WelcomeBootReceiver";
+    private static final String ABOUT_INTENT = "com.dirtyunicorns.about.AboutActivity";
+    private static final String TAG = "AboutBootReceiver";
 
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -42,14 +43,14 @@ public class BootCompleteReceiver extends BroadcastReceiver {
 
         if (!currentRomVersion.equals(previousRomVersion)) {
         //if (currentRomVersion.equals(previousRomVersion)) { //DEBUGGING
-            Log.d(TAG, "Running Welcome Activity");
+            Log.d(TAG, "Running About Activity");
 
             Intent i = new Intent();
             i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            i.setClassName(context, WELCOME_INTENT);
+            i.setClassName(context, ABOUT_INTENT);
             context.startActivity(i);
         } else {
-            Log.d(TAG, "Welcome Activity has already run");
+            Log.d(TAG, "About Activity has already run");
         }
 
     }
