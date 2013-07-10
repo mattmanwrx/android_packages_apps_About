@@ -35,14 +35,14 @@ public class BootCompleteReceiver extends BroadcastReceiver {
 
         SharedPreferences prefs = context.getSharedPreferences(aboutActivity.PREFS_NAME, 0);
 
-        String previousRomVersion = prefs.getString(aboutActivity.ROM_VERSION, "0.0.0");
-        String currentRomVersion = Utils.getRomVersion();
+        String previousDuVersion = prefs.getString(aboutActivity.DU_VERSION, "0.0.0");
+        String currentDuVersion = Utils.getDuVersion();
 
-        Log.d(TAG, "Previous ROM Version: " + previousRomVersion);
-        Log.d(TAG, "Current ROM Version: " + currentRomVersion);
+        Log.d(TAG, "Previous DU Version: " + previousDuVersion);
+        Log.d(TAG, "Current DU Version: " + currentDuVersion);
 
-        if (!currentRomVersion.equals(previousRomVersion)) {
-        //if (currentRomVersion.equals(previousRomVersion)) { //DEBUGGING
+        if (!currentDuVersion.equals(previousDuVersion)) {
+        //if (currentDuVersion.equals(previousDuVersion)) { //DEBUGGING
             Log.d(TAG, "Running About Activity");
 
             Intent i = new Intent();

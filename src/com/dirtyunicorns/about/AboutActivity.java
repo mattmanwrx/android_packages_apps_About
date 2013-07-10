@@ -37,7 +37,7 @@ public class AboutActivity extends Activity {
     public static Context appContext;
 
     public static final String PREFS_NAME = "About";
-    public static final String ROM_VERSION = "rom_version";
+    public static final String DU_VERSION = "du_version";
 	
     /** Called when the activity is first created. */
     @Override
@@ -86,11 +86,11 @@ public class AboutActivity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()) {
             case R.id.menuitem_exit:
-                String romVersion = Utils.getRomVersion();
+                String duVersion = Utils.getDuVersion();
 
                 SharedPreferences prefs = this.getSharedPreferences(PREFS_NAME, 0);
                 SharedPreferences.Editor prefEditor = prefs.edit();
-                prefEditor.putString(ROM_VERSION, romVersion);
+                prefEditor.putString(DU_VERSION, duVersion);
                 prefEditor.commit();
 
                 finish();

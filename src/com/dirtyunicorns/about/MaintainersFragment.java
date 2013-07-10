@@ -33,8 +33,8 @@ public class MaintainersFragment extends Fragment {
         View maintainersView = inflater.inflate(R.layout.maintainers_fragment, container, false);
 
         TextView maintainersVersion = (TextView) maintainersView.findViewById(R.id.maintainers_version);
-        String version =  Utils.getRomVersion();
-        maintainersVersion.append(" " + version);
+        String version =  Utils.getDuVersion();
+        maintainersVersion.append(" ");
 
         // Inflate the layout for this fragment
         return maintainersView;

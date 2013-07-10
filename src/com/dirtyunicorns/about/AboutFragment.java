@@ -33,7 +33,7 @@ public class AboutFragment extends Fragment {
         View aboutView = inflater.inflate(R.layout.about_fragment, container, false);
 
         TextView aboutTitle = (TextView) aboutView.findViewById(R.id.about_title);
-        String version =  Utils.getRomVersion();
+        String version =  Utils.getDuVersion();
         aboutTitle.append(" " + version);
 
         TextView aboutText = (TextView) aboutView.findViewById(R.id.about);

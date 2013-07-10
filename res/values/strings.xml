@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <string name="app_name">About Dirty Unicorns™</string>
-    <string name="about_title">Welcome to Dirty Unicorns</string>
+    <string name="about_title">Welcome to </string>
     <string name="features_title">DU Features</string>
     <string name="maintainers_title">Official Maintainers</string>
     <string name="maintainers_version_text">listed in no particular order</string>
