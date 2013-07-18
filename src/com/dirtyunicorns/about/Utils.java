@@ -18,6 +18,7 @@
 package com.dirtyunicorns.about;
 
 import android.content.Context;
+import android.os.SystemProperties;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -26,8 +27,7 @@ import java.io.InputStream;
 public class Utils {
 
     public static String getDuVersion() {
-    	//changed to java.lang.System.getProperty for building in eclipse
-        String version = java.lang.System.getProperty("ro.romstats.name");
+        String version = SystemProperties.get("ro.romstats.name");
         return version;
     }
 
