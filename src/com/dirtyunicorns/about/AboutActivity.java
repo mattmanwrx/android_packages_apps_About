@@ -17,25 +17,32 @@
 
 package com.dirtyunicorns.about;
 
+import java.util.ArrayList;
+
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
-import android.app.Activity;
-import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
 
-public class AboutActivity extends Activity {
+public class AboutActivity extends FragmentActivity {
     public static Context appContext;
-
+    private ViewPager mViewPager;
+    private TabsAdapter mTabsAdapter;
+    
     public static final String PREFS_NAME = "About";
     public static final String DU_VERSION = "du_version";
 	
@@ -43,36 +50,23 @@ public class AboutActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        mViewPager = new ViewPager(this);
+        mViewPager.setId(R.id.pager);
+        
+        setContentView(mViewPager);
         appContext = getApplicationContext();
-
-        //ActionBar
+        
         ActionBar actionbar = getActionBar();
         actionbar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+        actionbar.setDisplayShowHomeEnabled(false);
+        mTabsAdapter = new TabsAdapter(this, mViewPager);
+        mTabsAdapter.addTab(actionbar.newTab().setText(R.string.about_tab_title),AboutFragment.class, null);
+        mTabsAdapter.addTab(actionbar.newTab().setText(R.string.features_tab_title),FeaturesFragment.class, null);
+        mTabsAdapter.addTab(actionbar.newTab().setText(R.string.maintainers_tab_title),MaintainersFragment.class, null);
+        mTabsAdapter.addTab(actionbar.newTab().setText(R.string.contributors_tab_title),ContributorsFragment.class, null);
+        mTabsAdapter.addTab(actionbar.newTab().setText(R.string.social_tab_title),SocialFragment.class, null);
         
-        ActionBar.Tab AboutTab = actionbar.newTab().setText(R.string.about_tab_title);
-        ActionBar.Tab FeaturesTab = actionbar.newTab().setText(R.string.features_tab_title);
-        ActionBar.Tab MaintainersTab = actionbar.newTab().setText(R.string.maintainers_tab_title);
-        ActionBar.Tab ContributorsTab = actionbar.newTab().setText(R.string.contributors_tab_title);
-        ActionBar.Tab SocialTab = actionbar.newTab().setText(R.string.social_tab_title);
-        
-        Fragment AboutFragment = new AboutFragment();
-        Fragment FeaturesFragment = new FeaturesFragment();
-        Fragment MaintainersFragment = new MaintainersFragment();
-        Fragment ContributorsFragment = new ContributorsFragment();
-        Fragment SocialFragment = new SocialFragment();
-
-        AboutTab.setTabListener(new MyTabsListener(AboutFragment));
-        FeaturesTab.setTabListener(new MyTabsListener(FeaturesFragment));
-        MaintainersTab.setTabListener(new MyTabsListener(MaintainersFragment));
-        ContributorsTab.setTabListener(new MyTabsListener(ContributorsFragment));
-        SocialTab.setTabListener(new MyTabsListener(SocialFragment));
-
-        actionbar.addTab(AboutTab);
-        actionbar.addTab(FeaturesTab);
-        actionbar.addTab(MaintainersTab);
-        actionbar.addTab(ContributorsTab);
-        actionbar.addTab(SocialTab);
+       
     }
 
     @Override
@@ -195,28 +189,88 @@ public class AboutActivity extends Activity {
         intent.setData(Uri.parse(getString(R.string.daxxmax_url)));
         startActivity(intent);
     }
-}
+    
+    public static class TabsAdapter extends FragmentPagerAdapter
+    implements ActionBar.TabListener, ViewPager.OnPageChangeListener {
+    	private static final String TAG = "About DirtyUnicorns";
+    	private final Context mContext;
+    	private final ActionBar mActionBar;
+    	private final ViewPager mViewPager;
+    	private final ArrayList<TabInfo> mTabs = new ArrayList<TabInfo>();
 
-class MyTabsListener implements ActionBar.TabListener {
-    public Fragment fragment;
+    	static final class TabInfo {
+    		private final Class<?> clss;
+    		private final Bundle args;
 
-    public MyTabsListener(Fragment fragment) {
-        this.fragment = fragment;
+    		TabInfo(Class<?> _class, Bundle _args) {
+    			clss = _class;
+    			args = _args;
+    		}
+    	}
+
+    	public TabsAdapter(FragmentActivity activity, ViewPager pager) {
+    		super(activity.getSupportFragmentManager());
+    		mContext = activity;
+    		mActionBar = activity.getActionBar();
+    		mViewPager = pager;
+    		mViewPager.setAdapter(this);
+    		mViewPager.setOnPageChangeListener(this);
+    	}
+
+    	public void addTab(ActionBar.Tab tab, Class<?> clss, Bundle args) {
+    		TabInfo info = new TabInfo(clss, args);
+    		tab.setTag(info);
+    		tab.setTabListener(this);
+    		mTabs.add(info);
+    		mActionBar.addTab(tab);
+    		notifyDataSetChanged();
+    	}
+
+
+    	public int getCount() {
+    		return mTabs.size();
+    	}
+
+    	public Fragment getItem(int position) {
+    		TabInfo info = mTabs.get(position);
+    		return Fragment.instantiate(mContext, info.clss.getName(), info.args);
+    	}
+
+
+    	public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+    	}
+
+
+    	public void onPageSelected(int position) {
+    		mActionBar.setSelectedNavigationItem(position);
+    	}
+
+
+    	public void onPageScrollStateChanged(int state) {
+    	}
+
+
+    	public void onTabSelected(Tab tab, FragmentTransaction ft) {
+    		mViewPager.setCurrentItem(tab.getPosition());
+    		Log.v(TAG, "clicked");
+    		Object tag = tab.getTag();
+    		for (int i=0; i<mTabs.size(); i++) {
+    			if (mTabs.get(i) == tag) {
+    				mViewPager.setCurrentItem(i);
+    			}
+    		}
+    	}
+
+		@Override
+		public void onTabReselected(Tab arg0, FragmentTransaction arg1) {
+			
+			
+		}
+
+		@Override
+		public void onTabUnselected(Tab arg0, FragmentTransaction arg1) {
+			
+			
+		}
     }
-
-    @Override
-    public void onTabReselected(Tab tab, FragmentTransaction ft) {
-        // nothing
-    }
-
-    @Override
-    public void onTabSelected(Tab tab, FragmentTransaction ft) {
-        ft.replace(R.id.fragment_container, fragment);
-    }
-
-    @Override
-    public void onTabUnselected(Tab tab, FragmentTransaction ft) {
-        ft.remove(fragment);
-    }
-
 }
