@@ -34,7 +34,7 @@ public class AboutFragment extends Fragment {
 
         TextView aboutTitle = (TextView) aboutView.findViewById(R.id.about_title);
         String version =  Utils.getDuVersion();
-        aboutTitle.append(" " + version);
+        aboutTitle.append(" Dirty Unicorns");
 
         TextView aboutText = (TextView) aboutView.findViewById(R.id.about);
         aboutText.setText(Utils.readRawFile(AboutActivity.appContext, R.raw.about_dirtyunicorns));
