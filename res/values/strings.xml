@@ -32,6 +32,7 @@
     <string name="maintainers_tab_title">Maintainers</string>
     <string name="contributors_tab_title">Contributors</string>
     <string name="social_tab_title">Social</string>
+    <string name="dirt_tab_title">Team D.I.R.T</string>
 
     <!-- Social -->
     <string name="googleplus_url">https://plus.google.com/communities/109738128866939227235</string>
@@ -42,11 +43,9 @@
     <string name="github_url">https://github.com/DirtyUnicorns422</string>
 
     <!-- Maintainers -->
-    <string name="paul">DEVICE: Nexus 4</string>
     <string name="dennis">DEVICE: Samsung Galaxy S III (I9300)</string>
     <string name="kenneth">DEVICE: Samsung Epic 4G Touch</string>
     <string name="brian">DEVICE: Samsung Fascinate</string>
-    <string name="paul_url">https://plus.google.com/114519299157665129936</string>
     <string name="dennis_url">https://plus.google.com/110150707325272137288</string>
     <string name="kenneth_url">https://plus.google.com/110561769492553874762</string>
     <string name="brian_url">https://plus.google.com/115522815889154627721</string>
@@ -62,5 +61,19 @@
     <string name="preludedrew_url">https://plus.google.com/110733352602948379183</string>
     <string name="lordclockan_url">https://plus.google.com/103606270348994952889</string>
     <string name="daxxmax_url">https://plus.google.com/115569516936113574583</string>
+
+    <!-- Team D.I.R.T -->
+    <string name="dirt_title">Team D.I.R.T</string>
+    <string name="dirt_version_text">DEVS IN REAL TIME</string>
+    <string name="barry_url">https://plus.google.com/u/0/100328966646048063058</string>
+    <string name="bret_url">https://plus.google.com/u/0/100223633481073439007</string>
+    <string name="dk_url">https://plus.google.com/u/0/105930089129353417025</string>
+    <string name="evol_url">https://plus.google.com/u/0/117164000095111132498</string>
+    <string name="jmz_url">https://plus.google.com/u/0/114752542428879077695</string>
+    <string name="kommy_url">https://plus.google.com/u/0/118219639511828551426</string>
+    <string name="mazda_url">https://plus.google.com/u/0/107557684350196595860</string>
+    <string name="mike_url">https://plus.google.com/u/0/107028563658695280755</string>
+    <string name="paul_url">https://plus.google.com/114519299157665129936</string>
+    <string name="reduxd_url">https://plus.google.com/u/0/109615972640437816741</string>
 
 </resources>

@@ -62,10 +62,10 @@ public class AboutActivity extends FragmentActivity {
         mTabsAdapter = new TabsAdapter(this, mViewPager);
         mTabsAdapter.addTab(actionbar.newTab().setText(R.string.about_tab_title),AboutFragment.class, null);
         mTabsAdapter.addTab(actionbar.newTab().setText(R.string.features_tab_title),FeaturesFragment.class, null);
+        mTabsAdapter.addTab(actionbar.newTab().setText(R.string.dirt_tab_title),DirtFragment.class, null);  
         mTabsAdapter.addTab(actionbar.newTab().setText(R.string.maintainers_tab_title),MaintainersFragment.class, null);
         mTabsAdapter.addTab(actionbar.newTab().setText(R.string.contributors_tab_title),ContributorsFragment.class, null);
-        mTabsAdapter.addTab(actionbar.newTab().setText(R.string.social_tab_title),SocialFragment.class, null);
-        
+        mTabsAdapter.addTab(actionbar.newTab().setText(R.string.social_tab_title),SocialFragment.class, null);      
        
     }
 
@@ -115,12 +115,6 @@ public class AboutActivity extends FragmentActivity {
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_VIEW);
         intent.setData(Uri.parse(getString(R.string.github_url)));
-        startActivity(intent);
-    }
-    public void launchPaul(View view) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(getString(R.string.paul_url)));
         startActivity(intent);
     }
     public void launchDennis(View view) {
@@ -187,6 +181,66 @@ public class AboutActivity extends FragmentActivity {
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_VIEW);
         intent.setData(Uri.parse(getString(R.string.daxxmax_url)));
+        startActivity(intent);
+    }
+    public void launchBarry(View view) {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(getString(R.string.barry_url)));
+        startActivity(intent);
+    }
+    public void launchBret(View view) {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(getString(R.string.bret_url)));
+        startActivity(intent);
+    }
+    public void launchDk(View view) {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(getString(R.string.dk_url)));
+        startActivity(intent);
+    }
+    public void launchEvol(View view) {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(getString(R.string.evol_url)));
+        startActivity(intent);
+    }
+    public void launchJmz(View view) {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(getString(R.string.jmz_url)));
+        startActivity(intent);
+    }
+    public void launchKommy(View view) {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(getString(R.string.kommy_url)));
+        startActivity(intent);
+    }
+    public void launchMazda(View view) {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(getString(R.string.mazda_url)));
+        startActivity(intent);
+    }
+    public void launchMike(View view) {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(getString(R.string.mike_url)));
+        startActivity(intent);
+    }
+    public void launchPaul(View view) {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(getString(R.string.paul_url)));
+        startActivity(intent);
+    }
+    public void launchReduxd(View view) {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(getString(R.string.reduxd_url)));
         startActivity(intent);
     }
     
