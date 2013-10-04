@@ -4,25 +4,17 @@ Feature list:
 - Facebook Sync Hack
 - Expanded desktop
 - Hot Reboot Option
-- PIE along with PIE Control
-- Paranoidandroid Hybrid Engine
-- Per-App-Color mod
 - Ribbons (AOKP)
-- Dirt Settings (based off root-box)
 - Customizable Quick Settings
 - Custom "BAMF" Theme engine
-- Customizable power menu
+- Customizable power menu (Torch, Profiles, etc)
 - Customizable lockscreen buttons and sliders
-- SMS and missed call breathing notifications
-- Permissions Management
+- Missed call breathing notifications
+- App Ops access in Settings
 - CM Camera Mods
 - CM Powerwidget
 - CM Profiles
-- CM External GPS support
 - CM apps (Apollo, DSPManager, CMFileManager, etc)
-- CM phone advanced settings
-- CM Privacy Guard
-- SlimROMs notification shortcuts
 - SlimROMs TRDS (built in theme in settings)
 - SlimROMs Statusbar Clock options
 - Transparent Statusbar and NavBar Options
@@ -30,12 +22,25 @@ Feature list:
 - Halo bubble color changer
 - Halo size changer
 - Multi-user support
-- Hardware keys remap mod
-- 24 Battery options
-- More power options (Torch, Profiles, etc)
-- Gesture based lockscreen security
+- Customizable Softkeys
+- 24+ Battery options
 - Network speed indicator in statusbar
-- Color customization of Tiles (Team Baked)
 - Koush Superuser
 - Nav Bar customizations 
+- Host file switcher (ad-free switch)
+- Build Propper
+- Active Display (Moto X notifications)
+- Wakelock blocker
+- Suspend Actions (power saving mod)
+- ListView Animations
+- Custom System Animations
+- Swipe to Switch in RC (toggle)
+- Lockscreen Tint Color Mod
+- Weather Panel
+- Change lockscreen wallpaper
+- OTA updates via DU Updater
+- Custom BusyDialog
+- Advanced Low Battery Indicator options
+- Music/Halo toggle/tiles
+- ScreenShot QuickTrash
 - Much More, just look in Settings and ENJOY!!!
