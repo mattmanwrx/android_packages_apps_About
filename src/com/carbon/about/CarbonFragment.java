@@ -15,19 +15,28 @@
  * limitations under the License.
  */
 
-package com.dirtyunicorns.about;
+package com.carbon.about;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
-public class ContributorsFragment extends Fragment {
+
+public class CarbonFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        View carbonView = inflater.inflate(R.layout.carbon_fragment, container, false);
+
+        TextView carbonVersion = (TextView) carbonView.findViewById(R.id.carbon_version);
+        String version =  Utils.getCarbonVersion();
+        carbonVersion.append(" ");
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.contributors_fragment, container, false);
+        return carbonView;
     }
 }

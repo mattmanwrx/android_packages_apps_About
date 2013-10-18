@@ -15,27 +15,19 @@
  * limitations under the License.
  */
 
-package com.dirtyunicorns.about;
+package com.carbon.about;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
-
-public class FeaturesFragment extends Fragment {
+public class SocialFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        View featuresView = inflater.inflate(R.layout.features_fragment, container, false);
-
-        TextView featuresText = (TextView) featuresView.findViewById(R.id.features);
-        featuresText.setText(Utils.readRawFile(AboutActivity.appContext, R.raw.features));
-
         // Inflate the layout for this fragment
-        return featuresView;
+        return inflater.inflate(R.layout.social_fragment, container, false);
     }
 }

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.dirtyunicorns.about;
+package com.carbon.about;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -25,18 +25,17 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-public class MaintainersFragment extends Fragment {
+public class FeaturesFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View maintainersView = inflater.inflate(R.layout.maintainers_fragment, container, false);
+        View featuresView = inflater.inflate(R.layout.features_fragment, container, false);
 
-        TextView maintainersVersion = (TextView) maintainersView.findViewById(R.id.maintainers_version);
-        String version =  Utils.getDuVersion();
-        maintainersVersion.append(" ");
+        TextView featuresText = (TextView) featuresView.findViewById(R.id.features);
+        featuresText.setText(Utils.readRawFile(AboutActivity.appContext, R.raw.features));
 
         // Inflate the layout for this fragment
-        return maintainersView;
+        return featuresView;
     }
 }

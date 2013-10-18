@@ -15,31 +15,19 @@
  * limitations under the License.
  */
 
-package com.dirtyunicorns.about;
+package com.carbon.about;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
-
-public class AboutFragment extends Fragment {
+public class ContributorsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        View aboutView = inflater.inflate(R.layout.about_fragment, container, false);
-
-        TextView aboutTitle = (TextView) aboutView.findViewById(R.id.about_title);
-        String version =  Utils.getDuVersion();
-        aboutTitle.append(" Dirty Unicorns");
-
-        TextView aboutText = (TextView) aboutView.findViewById(R.id.about);
-        aboutText.setText(Utils.readRawFile(AboutActivity.appContext, R.raw.about_dirtyunicorns));
-
         // Inflate the layout for this fragment
-        return aboutView;
+        return inflater.inflate(R.layout.contributors_fragment, container, false);
     }
 }

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.dirtyunicorns.about;
+package com.carbon.about;
 
 import java.util.ArrayList;
 
@@ -44,7 +44,7 @@ public class AboutActivity extends FragmentActivity {
     private TabsAdapter mTabsAdapter;
     
     public static final String PREFS_NAME = "About";
-    public static final String DU_VERSION = "du_version";
+    public static final String CARBON_VERSION = "carbon_version";
 	
     /** Called when the activity is first created. */
     @Override
@@ -62,7 +62,7 @@ public class AboutActivity extends FragmentActivity {
         mTabsAdapter = new TabsAdapter(this, mViewPager);
         mTabsAdapter.addTab(actionbar.newTab().setText(R.string.about_tab_title),AboutFragment.class, null);
         mTabsAdapter.addTab(actionbar.newTab().setText(R.string.features_tab_title),FeaturesFragment.class, null);
-        mTabsAdapter.addTab(actionbar.newTab().setText(R.string.dirt_tab_title),DirtFragment.class, null);  
+        mTabsAdapter.addTab(actionbar.newTab().setText(R.string.carbon_title),CarbonFragment.class, null);  
         mTabsAdapter.addTab(actionbar.newTab().setText(R.string.maintainers_tab_title),MaintainersFragment.class, null);
         mTabsAdapter.addTab(actionbar.newTab().setText(R.string.contributors_tab_title),ContributorsFragment.class, null);
         mTabsAdapter.addTab(actionbar.newTab().setText(R.string.social_tab_title),SocialFragment.class, null);      
@@ -80,11 +80,11 @@ public class AboutActivity extends FragmentActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()) {
             case R.id.menuitem_exit:
-                String duVersion = Utils.getDuVersion();
+                String carbonVersion = Utils.getCarbonVersion();
 
                 SharedPreferences prefs = this.getSharedPreferences(PREFS_NAME, 0);
                 SharedPreferences.Editor prefEditor = prefs.edit();
-                prefEditor.putString(DU_VERSION, duVersion);
+                prefEditor.putString(CARBON_VERSION, carbonVersion);
                 prefEditor.commit();
 
                 finish();
@@ -246,7 +246,7 @@ public class AboutActivity extends FragmentActivity {
     
     public static class TabsAdapter extends FragmentPagerAdapter
     implements ActionBar.TabListener, ViewPager.OnPageChangeListener {
-    	private static final String TAG = "About DirtyUnicorns";
+    	private static final String TAG = "About Carbon";
     	private final Context mContext;
     	private final ActionBar mActionBar;
     	private final ViewPager mViewPager;

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.dirtyunicorns.about;
+package com.carbon.about;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -25,18 +25,21 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-public class DirtFragment extends Fragment {
+public class AboutFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View dirtView = inflater.inflate(R.layout.dirt_fragment, container, false);
+        View aboutView = inflater.inflate(R.layout.about_fragment, container, false);
 
-        TextView dirtVersion = (TextView) dirtView.findViewById(R.id.dirt_version);
-        String version =  Utils.getDuVersion();
-        dirtVersion.append(" ");
+        TextView aboutTitle = (TextView) aboutView.findViewById(R.id.about_title);
+        String version =  Utils.getCarbonVersion();
+        aboutTitle.append(" Carbon ");
+
+        TextView aboutText = (TextView) aboutView.findViewById(R.id.about);
+        aboutText.setText(Utils.readRawFile(AboutActivity.appContext, R.raw.about_carbon));
 
         // Inflate the layout for this fragment
-        return dirtView;
+        return aboutView;
     }
 }

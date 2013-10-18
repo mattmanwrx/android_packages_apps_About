@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.dirtyunicorns.about;
+package com.carbon.about;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -26,7 +26,7 @@ import android.util.Log;
 
 public class BootCompleteReceiver extends BroadcastReceiver {
 
-    private static final String ABOUT_INTENT = "com.dirtyunicorns.about.AboutActivity";
+    private static final String ABOUT_INTENT = "com.carbon.about.AboutActivity";
     private static final String TAG = "AboutBootReceiver";
 
     @Override
@@ -35,14 +35,14 @@ public class BootCompleteReceiver extends BroadcastReceiver {
 
         SharedPreferences prefs = context.getSharedPreferences(aboutActivity.PREFS_NAME, 0);
 
-        String previousDuVersion = prefs.getString(aboutActivity.DU_VERSION, "0.0.0");
-        String currentDuVersion = Utils.getDuVersion();
+        String previousCarbonVersion = prefs.getString(aboutActivity.CARBON_VERSION, "0.0.0");
+        String currentCarbonVersion = Utils.getCarbonVersion();
 
-        Log.d(TAG, "Previous DU Version: " + previousDuVersion);
-        Log.d(TAG, "Current DU Version: " + currentDuVersion);
+        Log.d(TAG, "Previous Carbon Version: " + previousCarbonVersion);
+        Log.d(TAG, "Current Carbon Version: " + currentCarbonVersion);
 
-        if (!currentDuVersion.equals(previousDuVersion)) {
-        //if (currentDuVersion.equals(previousDuVersion)) { //DEBUGGING
+        if (!currentCarbonVersion.equals(previousCarbonVersion)) {
+        //if (currentDuVersion.equals(previousCarbonVersion)) { //DEBUGGING
             Log.d(TAG, "Running About Activity");
 
             Intent i = new Intent();

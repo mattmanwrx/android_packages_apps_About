@@ -16,9 +16,9 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="app_name">About Dirty Unicorns™</string>
+    <string name="app_name">About Carbon</string>
     <string name="about_title">Welcome to </string>
-    <string name="features_title">DU Features</string>
+    <string name="features_title">Carbon Features</string>
     <string name="maintainers_title">Maintainers</string>
     <string name="maintainers_version_text">listed in no particular order</string>
     <string name="finish_button_text">Finish</string>
@@ -32,7 +32,7 @@
     <string name="maintainers_tab_title">Maintainers</string>
     <string name="contributors_tab_title">Contributors</string>
     <string name="social_tab_title">Social</string>
-    <string name="dirt_tab_title">Team D.I.R.T</string>
+    <string name="carbon_tab_title">Team Carbon</string>
 
     <!-- Social -->
     <string name="googleplus_url">https://plus.google.com/communities/109738128866939227235</string>
@@ -40,7 +40,7 @@
     <string name="twitter_url">https://twitter.com/_DirtyUnicorns_</string>
     <string name="twitter">Come tweet with us at Twitter!!</string>
     <string name="github">View our source or Contribute if you wish!!</string>
-    <string name="github_url">https://github.com/DU-Final</string>
+    <string name="github_url">https://github.com/CarbonDev</string>
 
     <!-- Maintainers -->
     <string name="dennis">DEVICE: Samsung Galaxy S III (I9300)</string>
@@ -63,8 +63,8 @@
     <string name="daxxmax_url">https://plus.google.com/115569516936113574583</string>
 
     <!-- Team D.I.R.T -->
-    <string name="dirt_title">Team D.I.R.T</string>
-    <string name="dirt_version_text">DEVS IN REAL TIME</string>
+    <string name="carbon_title">Carbon Team</string>
+    <string name="carbon_version_text">DEVS IN REAL TIME</string>
     <string name="barry_url">https://plus.google.com/u/0/100328966646048063058</string>
     <string name="bret_url">https://plus.google.com/u/0/100223633481073439007</string>
     <string name="dk_url">https://plus.google.com/u/0/105930089129353417025</string>

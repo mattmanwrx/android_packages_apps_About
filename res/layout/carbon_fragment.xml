@@ -34,13 +34,13 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="5sp"
                 android:textSize="20sp"
-                android:text="@string/dirt_title" />
+                android:text="@string/carbon_title" />
 
-            <TextView android:id="@+id/dirt_version"
+            <TextView android:id="@+id/carbon_version"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingBottom="5sp"
-                android:text="@string/dirt_version_text" />
+                android:text="@string/carbon_version_text" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -112,7 +112,7 @@
                 android:src="@drawable/reduxd"
                 android:onClick="launchReduxd" />
 
-            <TextView android:id="@+id/dirt"
+            <TextView android:id="@+id/carbon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="left" />
