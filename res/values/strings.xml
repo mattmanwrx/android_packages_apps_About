@@ -35,45 +35,26 @@
     <string name="carbon_tab_title">Team Carbon</string>
 
     <!-- Social -->
-    <string name="googleplus_url">https://plus.google.com/communities/109738128866939227235</string>
+    <string name="googleplus_url">https://plus.google.com/communities/110719619509805969062</string>
     <string name="googleplus">Come join us at our great G+ community!!</string>
-    <string name="twitter_url">https://twitter.com/_DirtyUnicorns_</string>
+    <string name="twitter_url">https://twitter.com/carbonrom</string>
     <string name="twitter">Come tweet with us at Twitter!!</string>
     <string name="github">View our source or Contribute if you wish!!</string>
     <string name="github_url">https://github.com/CarbonDev</string>
 
     <!-- Maintainers -->
     <string name="dennis">DEVICE: Samsung Galaxy S III (I9300)</string>
-    <string name="kenneth">DEVICE: Samsung Epic 4G Touch</string>
-    <string name="brian">DEVICE: Samsung Fascinate</string>
     <string name="dennis_url">https://plus.google.com/110150707325272137288</string>
-    <string name="kenneth_url">https://plus.google.com/110561769492553874762</string>
-    <string name="brian_url">https://plus.google.com/115522815889154627721</string>
 
     <!-- Contributors -->
     <string name="contributors">Contributors</string>
     <string name="contributors2">listed in no particular order</string>
     <string name="aokp_url">https://plus.google.com/105080186717848173196</string>
-    <string name="cm_url">https://plus.google.com/+CyanogenMod/</string>
-    <string name="pa_url">https://plus.google.com/107979589566958860409</string>
-    <string name="carbon_url">https://plus.google.com/103315278250477995368</string>
-    <string name="chaos_url">https://plus.google.com/communities/118345323576530120067</string>
-    <string name="preludedrew_url">https://plus.google.com/110733352602948379183</string>
-    <string name="lordclockan_url">https://plus.google.com/103606270348994952889</string>
     <string name="daxxmax_url">https://plus.google.com/115569516936113574583</string>
 
-    <!-- Team D.I.R.T -->
+    <!-- Carbon Team -->
     <string name="carbon_title">Carbon Team</string>
     <string name="carbon_version_text">DEVS IN REAL TIME</string>
     <string name="barry_url">https://plus.google.com/u/0/100328966646048063058</string>
-    <string name="bret_url">https://plus.google.com/u/0/100223633481073439007</string>
-    <string name="dk_url">https://plus.google.com/u/0/105930089129353417025</string>
-    <string name="evol_url">https://plus.google.com/u/0/117164000095111132498</string>
-    <string name="jmz_url">https://plus.google.com/u/0/114752542428879077695</string>
-    <string name="kommy_url">https://plus.google.com/u/0/118219639511828551426</string>
-    <string name="mazda_url">https://plus.google.com/u/0/107557684350196595860</string>
-    <string name="mike_url">https://plus.google.com/u/0/107028563658695280755</string>
-    <string name="paul_url">https://plus.google.com/114519299157665129936</string>
-    <string name="reduxd_url">https://plus.google.com/u/0/109615972640437816741</string>
 
 </resources>

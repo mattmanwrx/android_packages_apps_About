@@ -49,69 +49,6 @@
                 android:src="@drawable/barry"
                 android:onClick="launchBarry" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10sp"
-                android:src="@drawable/bret"
-                android:onClick="launchBret" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10sp"
-                android:src="@drawable/dk"
-                android:onClick="launchDk" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10sp"
-                android:src="@drawable/evol"
-                android:onClick="launchEvol" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10sp"
-                android:src="@drawable/jmz"
-                android:onClick="launchJmz" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10sp"
-                android:src="@drawable/kommy"
-                android:onClick="launchKommy" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10sp"
-                android:src="@drawable/mazda"
-                android:onClick="launchMazda" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10sp"
-                android:src="@drawable/mike"
-                android:onClick="launchMike" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10sp"
-                android:src="@drawable/paul"
-                android:onClick="launchPaul" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10sp"
-                android:src="@drawable/reduxd"
-                android:onClick="launchReduxd" />
-
             <TextView android:id="@+id/carbon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

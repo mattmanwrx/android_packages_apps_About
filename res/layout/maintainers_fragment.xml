@@ -55,32 +55,6 @@
                 android:paddingBottom="5sp"
                 android:text="@string/dennis" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10sp"
-                android:src="@drawable/kenneth"
-                android:onClick="launchKenneth" />
-
-            <TextView android:id="@+id/maintainers_version"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="5sp"
-                android:text="@string/kenneth" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10sp"
-                android:src="@drawable/brian"
-                android:onClick="launchBrian" />
-
-            <TextView android:id="@+id/maintainers_version"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="5sp"
-                android:text="@string/brian" />
-
             <TextView android:id="@+id/maintainers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

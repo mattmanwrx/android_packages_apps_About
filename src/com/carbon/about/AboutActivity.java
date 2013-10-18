@@ -123,58 +123,10 @@ public class AboutActivity extends FragmentActivity {
         intent.setData(Uri.parse(getString(R.string.dennis_url)));
         startActivity(intent);
     }
-    public void launchKenneth(View view) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(getString(R.string.kenneth_url)));
-        startActivity(intent);
-    }
-    public void launchBrian(View view) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(getString(R.string.brian_url)));
-        startActivity(intent);
-    }
     public void launchAokp(View view) {
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_VIEW);
         intent.setData(Uri.parse(getString(R.string.aokp_url)));
-        startActivity(intent);
-    }
-    public void launchCm(View view) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(getString(R.string.cm_url)));
-        startActivity(intent);
-    }
-    public void launchPa(View view) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(getString(R.string.pa_url)));
-        startActivity(intent);
-    }
-    public void launchCarbon(View view) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(getString(R.string.carbon_url)));
-        startActivity(intent);
-    }
-    public void launchChaos(View view) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(getString(R.string.chaos_url)));
-        startActivity(intent);
-    }
-    public void launchPreludedrew(View view) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(getString(R.string.preludedrew_url)));
-        startActivity(intent);
-    }
-    public void launchLordclockan(View view) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(getString(R.string.lordclockan_url)));
         startActivity(intent);
     }
     public void launchDaxxmax(View view) {
@@ -189,60 +141,8 @@ public class AboutActivity extends FragmentActivity {
         intent.setData(Uri.parse(getString(R.string.barry_url)));
         startActivity(intent);
     }
-    public void launchBret(View view) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(getString(R.string.bret_url)));
-        startActivity(intent);
-    }
-    public void launchDk(View view) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(getString(R.string.dk_url)));
-        startActivity(intent);
-    }
-    public void launchEvol(View view) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(getString(R.string.evol_url)));
-        startActivity(intent);
-    }
-    public void launchJmz(View view) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(getString(R.string.jmz_url)));
-        startActivity(intent);
-    }
-    public void launchKommy(View view) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(getString(R.string.kommy_url)));
-        startActivity(intent);
-    }
-    public void launchMazda(View view) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(getString(R.string.mazda_url)));
-        startActivity(intent);
-    }
-    public void launchMike(View view) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(getString(R.string.mike_url)));
-        startActivity(intent);
-    }
-    public void launchPaul(View view) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(getString(R.string.paul_url)));
-        startActivity(intent);
-    }
-    public void launchReduxd(View view) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(getString(R.string.reduxd_url)));
-        startActivity(intent);
-    }
+
+
     
     public static class TabsAdapter extends FragmentPagerAdapter
     implements ActionBar.TabListener, ViewPager.OnPageChangeListener {
